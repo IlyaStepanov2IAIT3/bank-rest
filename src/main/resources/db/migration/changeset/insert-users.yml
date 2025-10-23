@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-users
+      author: Ilya Stepanov
+      changes:
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: username
+                  value: admin
+              - column:
+                  name: password
+                  value: $2a$12$ltirU99xPBernR48dO4ypOLyF6ByzODyPZxLZ3NuTZz39lE0xAF46
+              - column:
+                  name: full_name
+                  value: Системный Администратор
+              - column:
+                  name: created_at
+                  valueComputed: "CURRENT_TIMESTAMP"
+        - insert:
+            tableName: users
+            columns:
+              - column:
+                  name: username
+                  value: user
+              - column:
+                  name: password
+                  value: $2a$12$At9d1/amoghMvO9RaaXKt.KeINX5Ujs3Sk/7kdaflXlSLavpEmqzS
+              - column:
+                  name: full_name
+                  value: Илья Степанов
+              - column:
+                  name: created_at
+                  valueComputed: "CURRENT_TIMESTAMP"

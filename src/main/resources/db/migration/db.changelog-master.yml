@@ -1,0 +1,15 @@
+databaseChangeLog:
+  - include:
+      file: db/migration/changeset/create-users-table.yml
+  - include:
+      file: db/migration/changeset/create-cards-table.yml
+  - include:
+      file: db/migration/changeset/create-roles-table.yml
+  - include:
+      file: db/migration/changeset/create-user-roles-table.yml
+  - include:
+      file: db/migration/changeset/insert-roles.yml
+  - include:
+      file: db/migration/changeset/insert-users.yml
+  - include:
+      file: db/migration/changeset/insert-user-roles.yml

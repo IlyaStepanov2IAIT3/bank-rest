@@ -1,0 +1,25 @@
+services:
+  db:
+    image: postgres
+    container_name: bank_db
+    restart: always
+    environment:
+      - POSTGRES_DB=bank_rest
+      - POSTGRES_USER=bank_user
+      - POSTGRES_PASSWORD=98534323
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5433:5432"
+  app:
+    restart: always
+    build: .
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:postgresql://db:5432/bank_rest
+
+volumes:
+  postgres_data:

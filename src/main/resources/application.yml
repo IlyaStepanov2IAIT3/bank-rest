@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: bank_rest
+  datasource:
+    url: jdbc:postgresql://localhost:5433/bank_rest
+    username: bank_user
+    password: 98534323
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  liquibase:
+    enabled: true
+    change-log: classpath:db/migration/db.changelog-master.yml
+
+jwt:
+  secret: vrvqyiaB9WEJ41S6y+Ibd4OzUSa8avi3KJfXB8O32v0=
+  expiration: 1h
+
+encryption:
+  card-key: HI+CGVOKpbpb/ejYTYXp3oe+Dhevif5eZDI7p4taKjQ=
