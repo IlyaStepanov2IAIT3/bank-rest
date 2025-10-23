@@ -73,5 +73,5 @@ Open API: resources/docs/openapi.yml
 ## Контакты
 
 -   Автор: Илья Степанов
--   Email: ilyastepanovwork0@gmail.com
+-   Email: ilyastepanov001@mail.ru
 -   Telegram: @SteelHraesvelgr
