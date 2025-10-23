@@ -48,7 +48,7 @@ REST API для управления банковскими картами и п
 1. Клонируйте репозиторий:
 
 ```bash
-git clone https://github.com/yourusername/bank-rest.git
+git clone https://github.com/IlyaStepanov2IAIT3/bank-rest.git
 ```
 
 2. Перейдите в папку с проектом:
