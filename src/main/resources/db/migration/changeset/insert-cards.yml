@@ -1,0 +1,89 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert-cards
+      author: Ilya Stepanov
+      changes:
+        - insert:
+            tableName: cards
+            columns:
+              - column:
+                  name: number
+                  value: "jc3zGDU0Oo173ne8FBMCOaR4FOCKWwuCt7iqlVy6aUA="
+              - column:
+                  name: expiration_date
+                  value: "2028-10-23T23:59:59"
+              - column:
+                  name: status
+                  value: "ACTIVE"
+              - column:
+                  name: balance
+                  valueNumeric: 1000.00
+              - column:
+                  name: created_at
+                  valueComputed: "CURRENT_TIMESTAMP"
+              - column:
+                 name: user_id
+                 valueComputed: "(SELECT id FROM users WHERE username = 'user')"
+        - insert:
+            tableName: cards
+            columns:
+              - column:
+                  name: number
+                  value: "RK17/vC6UGGlxR/27lnMC6R4FOCKWwuCt7iqlVy6aUA="
+              - column:
+                  name: expiration_date
+                  value: "2028-10-23T23:59:59"
+              - column:
+                  name: status
+                  value: "ACTIVE"
+              - column:
+                  name: balance
+                  valueNumeric: 1000.00
+              - column:
+                  name: created_at
+                  valueComputed: "CURRENT_TIMESTAMP"
+              - column:
+                  name: user_id
+                  valueComputed: "(SELECT id FROM users WHERE username = 'user')"
+        - insert:
+            tableName: cards
+            columns:
+              - column:
+                  name: number
+                  value: "gghFU9BAJ6xZVOXk0KLvvqR4FOCKWwuCt7iqlVy6aUA="
+              - column:
+                  name: expiration_date
+                  value: "2028-10-23T23:59:59"
+              - column:
+                  name: status
+                  value: "ACTIVE"
+              - column:
+                  name: balance
+                  valueNumeric: 1000.00
+              - column:
+                  name: created_at
+                  valueComputed: "CURRENT_TIMESTAMP"
+              - column:
+                  name: user_id
+                  valueComputed: "(SELECT id FROM users WHERE username = 'admin')"
+        - insert:
+            tableName: cards
+            columns:
+              - column:
+                  name: number
+                  value: "X324BTi+/ILyTJFHg4f9iKR4FOCKWwuCt7iqlVy6aUA="
+              - column:
+                  name: expiration_date
+                  value: "2028-10-23T23:59:59"
+              - column:
+                  name: status
+                  value: "ACTIVE"
+              - column:
+                  name: balance
+                  valueNumeric: 1000.00
+              - column:
+                  name: created_at
+                  valueComputed: "CURRENT_TIMESTAMP"
+              - column:
+                  name: user_id
+                  valueComputed: "(SELECT id FROM users WHERE username = 'admin')"

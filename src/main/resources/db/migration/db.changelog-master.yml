@@ -13,3 +13,5 @@ databaseChangeLog:
       file: db/migration/changeset/insert-users.yml
   - include:
       file: db/migration/changeset/insert-user-roles.yml
+  - include:
+      file: db/migration/changeset/insert-cards.yml
